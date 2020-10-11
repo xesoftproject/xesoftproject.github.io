@@ -4,11 +4,14 @@
  * basic "move $piece of $deltaX position right and of $deltaY up"
  */
 function move(piece, deltaX, deltaY) {
-	el = document.querySelector(`a-entity[gltf-model="#${piece}"]`);
-	el.object3D.position.x += deltaX;
-	el.object3D.position.z -= deltaY; // z on 3d-plane, y on 2d, mirrored
-	console.log("moved %s to (%o, %o)", piece, el.object3D.position.x,
-			-el.object3D.position.z);
+	let el = document.querySelector(`a-entity[gltf-model="#${piece}"]`);
+	let x = el.object3D.position.x + deltaX;
+	let y = el.object3D.position.y
+	let z = el.object3D.position.z - deltaY; // z on 3d-plane, y on 2d, mirrored
+
+	el.setAttribute('animation', `property: position; dur: 500; to: ${x} ${y} ${z}`);
+
+	console.log("moving %s to (%o, %o)", piece, x, z);
 }
 
 // simula chiamate da websocket con comandi di spostamento (o robe simili)
@@ -43,4 +46,4 @@ function simpleClientSimulator() {
 	setTimeout(move.bind(this, 'avocado', 3, -3), 13500);
 }
 
-document.addEventListener("DOMContentLoaded", simpleClientSimulator);
+document.addEventListener('DOMContentLoaded', simpleClientSimulator);
