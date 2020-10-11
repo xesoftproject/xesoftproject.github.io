@@ -1,21 +1,27 @@
 <html>
 <head>
-<script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
+<meta charset="utf-8" />
+<link rel="icon" type="image/png" href="xesoft.png">
+<script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+<script src="simple-client-simulator.js"></script>
 </head>
 <body>
-	<a-scene>
-		<a-assets>
-			<a-asset-item id="suzanne" src="asset/Suzanne.gltf" />
-		</a-assets> 
+<a-scene debug>
+    <a-assets>
+        <a-asset-item id="avocado" src="asset/Avocado.gltf" />
+        <a-asset-item id="buggy" src="asset/Buggy.gltf" />
+        <a-asset-item id="duck" src="asset/Duck.gltf" />
+        <a-asset-item id="suzanne" src="asset/Suzanne.gltf" />
+    </a-assets>
 
-		<a-entity gltf-model="#suzanne" position="-1 0 -3"/>
-		<a-entity light="color: #AFA; intensity: 5" position="0 0 5" />
+    <a-box color="tomato" width="8" height="1" depth="8" position="0 0 -6"></a-box>
+    <a-box color="green" width="1" height="1" depth="1" position="-3.5 1 -2.5"></a-box>
 
-		<a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9" />
-		<a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E" />
-		<a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D" />
-		<a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4" />
+    <a-entity gltf-model="#avocado" position="-2.5 1 -2.5" scale="15 15 15"></a-entity>
+    <a-entity gltf-model="#buggy" position="-1.5 1 -2.5" scale=".01 .01 .01"></a-entity>
+    <a-entity gltf-model="#duck" position="-.5 1 -2.5" scale=".5 .5 .5" rotation="0 270 0"></a-entity>
+    <a-entity gltf-model="#suzanne" position=".5 1 -2.5" scale=".5 .5 .5"></a-entity>
 
-		<a-sky color="#ECECEC" /> </a-scene>
+</a-scene>
 </body>
 </html>
