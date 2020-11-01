@@ -8,19 +8,19 @@
 <body>
 <a-scene debug>
     <a-assets>
-        <a-asset-item id="avocado" src="asset/Avocado.gltf" />
+        <a-asset-item id="chess-base" src="asset/Chess_Base.gltf" />
+        <a-asset-item id="chess-queen" src="asset/Chess_Queen.gltf" />
         <a-asset-item id="buggy" src="asset/Buggy.gltf" />
         <a-asset-item id="duck" src="asset/Duck.gltf" />
         <a-asset-item id="suzanne" src="asset/Suzanne.gltf" />
     </a-assets>
 
-    <a-box color="tomato" width="8" height="1" depth="8" position="0 0 -6"></a-box>
-    <a-box color="green" width="1" height="1" depth="1" position="-3.5 1 -2.5"></a-box>
 
-    <a-entity gltf-model="#avocado" position="-2.5 1 -2.5" scale="15 15 15"></a-entity>
-    <a-entity gltf-model="#buggy" position="-1.5 1 -2.5" scale=".01 .01 .01"></a-entity>
-    <a-entity gltf-model="#duck" position="-.5 1 -2.5" scale=".5 .5 .5" rotation="0 270 0"></a-entity>
-    <a-entity gltf-model="#suzanne" position=".5 1 -2.5" scale=".5 .5 .5"></a-entity>
+
+    <a-entity gltf-model="#chess-base" depth="1" position="0 0 -5" scale="7 7 7"></a-entity>
+    <a-entity gltf-model="#chess-queen" position="-2.5 1 -2.5" scale="7 7 7"></a-entity>
+
+
 
 </a-scene>
 </body>
