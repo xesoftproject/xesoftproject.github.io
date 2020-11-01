@@ -46,4 +46,4 @@ function simpleClientSimulator() {
 	setTimeout(move.bind(this, 'avocado', 3, -3), 13500);
 }
 
-document.addEventListener('DOMContentLoaded', simpleClientSimulator);
+/*document.addEventListener('DOMContentLoaded', simpleClientSimulator);*/
