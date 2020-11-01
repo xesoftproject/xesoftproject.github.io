@@ -1,4 +1,4 @@
-# XeSoftProject.github.io bbb
+# XeSoftProject.github.io
 
 github pages for easy tests
 
