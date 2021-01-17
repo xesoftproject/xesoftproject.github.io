@@ -1,0 +1,170 @@
+/*GRID - BEGIN*/
+.grid-container {
+	max-width: 100%;
+	margin: 0 24px;
+	grid-gap: 12px;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	align-items: center;
+}
+
+.grid-container__nested {
+	margin: auto !important;
+}
+
+@media screen and (max-width: 767px) {
+	.grid-cl-1-mobile {
+		grid-column: span 1;
+	}
+	.grid-cl-2-mobile {
+		grid-column: span 2;
+	}
+	.grid-cl-3-mobile {
+		grid-column: span 3;
+	}
+	.grid-cl-4-mobile {
+		grid-column: span 4;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.grid-container {
+		margin: 0 40px;
+		grid-gap: 20px;
+		grid-template-columns: repeat(12, 1fr);
+	}
+	.grid-cl-1-tablet {
+		grid-column: span 1;
+	}
+	.grid-cl-2-tablet {
+		grid-column: span 2;
+	}
+	.grid-cl-3-tablet {
+		grid-column: span 3;
+	}
+	.grid-cl-4-tablet {
+		grid-column: span 4;
+	}
+	.grid-cl-5-tablet {
+		grid-column: span 5;
+	}
+	.grid-cl--6-tablet {
+		grid-column: span 6;
+	}
+	.grid-cl-7-tablet {
+		grid-column: span 7;
+	}
+	.grid-cl-8-tablet {
+		grid-column: span 8;
+	}
+	.grid-cl-9-tablet {
+		grid-column: span 9;
+	}
+	.grid-cl-10-tablet {
+		grid-column: span 10;
+	}
+	.grid-cl-11-tablet {
+		grid-column: span 11;
+	}
+	.grid-cl-12-tablet {
+		grid-column: span 12;
+	}
+}
+@media screen and (min-width: 1024px) {
+	.grid-container {
+		margin: 0 60px;
+	}
+	.grid-cl-1-desktop {
+		grid-column: span 1;
+	}
+	.grid-cl-2-desktop {
+		grid-column: span 2;
+	}
+	.grid-cl-3-desktop {
+		grid-column: span 3;
+	}
+	.grid-cl-4-desktop {
+		grid-column: span 4;
+	}
+	.grid-cl-5-desktop {
+		grid-column: span 5;
+	}
+	.grid-cl-6-desktop {
+		grid-column: span 6;
+	}
+	.grid-cl-7-desktop {
+		grid-column: span 7;
+	}
+	.grid-cl-8-desktop {
+		grid-column: span 8;
+	}
+	.grid-cl-9-desktop {
+		grid-column: span 9;
+	}
+	.grid-cl-10-desktop {
+		grid-column: span 10;
+	}
+	.grid-cl-11-desktop {
+		grid-column: span 11;
+	}
+	.grid-cl-12-desktop {
+		grid-column: span 12;
+	}
+}
+
+@media (min-width: 1280px) {
+	.grid-container {
+		margin: 0 48px;
+		grid-gap: 28px;
+	}
+}
+
+@media (min-width: 1440px) {
+	.grid-container {
+		margin: 0 56px;
+	}
+}
+
+@media (min-width: 1920px) {
+	.grid-container {
+		margin: 0 68px;
+	}
+}
+/*GRID - END*/
+
+/*HEADER - BEGIN*/
+.header-wrapper {
+    background: rgb(0,0,0,0.6);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+}
+
+.header-wrapper img{
+    width: 60px;
+    height: 46px;
+}
+@media (min-width: 1024px) {
+    .header-wrapper img{
+        width: 91px;
+        height: 70px;
+    }
+}
+/*HEADER - END*/
+
+/*FOOTER - BEGIN*/
+/*FOOTER - END*/
+
+/*BG - BEGIN*/
+.background-wrapper{
+    background-image: url("../img/sfondo-mobile.jpg");
+    background-repeat: no-repeat;
+}
+@media (min-width: 1024px) {
+    .background-wrapper{
+        background-image: url("../img/sfondo-desktop.jpg");
+    }
+}
+/*BG - END*/
