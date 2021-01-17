@@ -1,0 +1,39 @@
+.content-wrapper{
+    margin-top: 160px;
+    opacity: 0.8;
+    border-radius: 4px;
+    background-color: #c1e2e5;
+    position: relative;
+}
+.tabs-wrapper {
+    padding: 20px 30px;
+    position: relative;
+}
+.tabs-wrapper .tab {
+    float: left;
+}
+.tabs-wrapper .tab label {
+    position: relative;
+}
+.tabs-wrapper .tab [type=radio] {
+    display: none;   
+}
+.tabs-wrapper .tab [type=radio]~ label {
+    background: #80b3b8;
+}
+.tabs-wrapper .tab [type=radio]:checked ~ label {
+    background: #c1e2e5;
+    z-index: 2;
+}
+.tabs-wrapper .tab [type=radio]:checked ~ label ~ .content {
+    z-index: 1;
+}
+.tabs-wrapper .tab-content {
+    position: absolute;
+    top: 28px;
+    left: 0;
+    background: #c1e2e5;
+    right: 0;
+    bottom: 0;
+    padding: 20px;
+}
