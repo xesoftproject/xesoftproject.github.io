@@ -1,6 +1,14 @@
+@font-face {
+	font-family: Myriad Pro;
+	src: url(../font/MyriadProRegular.ttf);
+	}
+html{
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+} 
 body{
 	overflow-x: hidden;
 	margin: 0;
+	font-family: Myriad Pro;
 }
 p{
 	margin: 0;

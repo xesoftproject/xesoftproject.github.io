@@ -26,21 +26,47 @@
                 <div class="grid-cl-4-mobile grid-cl-7-tablet grid-cl-7-desktop"></div>
                 <div class="grid-cl-4-mobile grid-cl-5-tablet grid-cl-5-desktop">
                     <div class="content-wrapper">
-                        <div class="tabs-wrapper">
+                        <!--div class="tabs__wrapper">
+                            <ul class="tabs__list">
+                                <il class="tabs__list-element">
+                                    <a href="#accedi">
+                                        <span>Accedi</span>
+                                    </a>
+                                </il>
+                                <il class="tabs__list-element">
+                                    <a href="#registrati">
+                                        <span>Registrati</span>
+                                    </a>
+                                </il>
+                            </ul>
                             <div class="tab">
-                                <input type="radio" id="login" name="tab-group-1" checked>
-                                <label for="login">Accedi</label>
-                                <div class="tab-content">
-                                    stuffaaaa
+                                <div id="accedi" class="tab-content">
+                                    stuffaaaa111
                                 </div>
-                            </div>
-                            <div class="tab">
-                                <input type="radio" id="registrazione" name="tab-group-1">
-                                <label for="registrazione">Registrati</label>
-                                <div class="tab-content">
-                                    stuffdddd
+                                <div id="registrati" class="tab-content">
+                                    stuffaaaa222222
+                                </div>
+                            </div>                          
+                         </div-->
+                         <div class="tabs__wrapper">
+                            <div class="tabs__element">
+                                <input type="radio" id="login" name="acesso-portale" checked>
+                                <label for="login">Accedi</label>
+                                <div class="tabs__content">
+                                    <input type="email" id="email" pattern=".+@globex.com" size="30" required>
+                                    <input type="password" id="pass" name="password" minlength="8" required>
                                 </div> 
-                            </div>                             
+                            </div>
+                         
+                            <div class="tabs__element">
+                                <input type="radio" id="registrazione" name="acesso-portale">
+                                <label for="registrazione">Registrati</label>
+                                <div class="tabs__content">
+                                    <input type="text" size="30" required>
+                                    <input type="email" pattern=".+@globex.com" size="30" required>
+                                    <input type="password" name="password" minlength="8" required>
+                                </div> 
+                            </div>
                          </div>
                     </div>
                 </div>

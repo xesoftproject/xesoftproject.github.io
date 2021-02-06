@@ -1,39 +1,56 @@
 .content-wrapper{
     margin-top: 160px;
+}
+.tabs__wrapper {
+    position: relative;
+    display: table;
+    width: 100%;
+    background-color: #c1e2e5;
     opacity: 0.8;
     border-radius: 4px;
-    background-color: #c1e2e5;
-    position: relative;
 }
-.tabs-wrapper {
-    padding: 20px 30px;
-    position: relative;
+.tabs__wrapper .tabs__element{
+    display: table-cell;
+    width: 50%;
+    font-size: 24px;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #533987;
 }
-.tabs-wrapper .tab {
-    float: left;
+
+.tabs__wrapper .tabs__element label{
+    text-align: center;
+    padding: 20px 0;
+    display: inline-block;
+    width: 100%;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+    cursor: pointer;
 }
-.tabs-wrapper .tab label {
-    position: relative;
-}
-.tabs-wrapper .tab [type=radio] {
+.tabs__wrapper .tabs__element [type=radio] {
     display: none;   
 }
-.tabs-wrapper .tab [type=radio]~ label {
+.tabs__wrapper .tabs__element [type=radio] ~ label {
     background: #80b3b8;
 }
-.tabs-wrapper .tab [type=radio]:checked ~ label {
+.tabs__wrapper .tabs__element [type=radio]:checked ~ label {
     background: #c1e2e5;
     z-index: 2;
 }
-.tabs-wrapper .tab [type=radio]:checked ~ label ~ .content {
+.tabs__wrapper .tabs__element [type=radio]:checked ~ label ~ .tabs__content {
     z-index: 1;
 }
-.tabs-wrapper .tab-content {
+
+.tabs__content{
     position: absolute;
-    top: 28px;
+    top: 69px;
     left: 0;
     background: #c1e2e5;
     right: 0;
     bottom: 0;
     padding: 20px;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    height: 100%;
 }
