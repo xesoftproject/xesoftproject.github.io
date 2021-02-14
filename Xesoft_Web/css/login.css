@@ -1,3 +1,13 @@
+/*BG - BEGIN*/
+.background-wrapper{
+    background-image: url("../img/sfondo-login-mobile.png");
+}
+@media (min-width: 1024px) {
+    .background-wrapper{
+        background-image: url("../img/sfondo-login-desktop.jpg");
+    }
+}
+
 .content-wrapper{
     margin-top: 95px;
 }

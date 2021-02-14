@@ -63,7 +63,7 @@ p{
 	.grid-cl-5-tablet {
 		grid-column: span 5;
 	}
-	.grid-cl--6-tablet {
+	.grid-cl-6-tablet {
 		grid-column: span 6;
 	}
 	.grid-cl-7-tablet {
@@ -188,15 +188,9 @@ p{
 
 /*BG - BEGIN*/
 .background-wrapper{
-    background-image: url("../img/sfondo-mobile.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 100vh;
-}
-@media (min-width: 1024px) {
-    .background-wrapper{
-        background-image: url("../img/sfondo-desktop.jpg");
-    }
 }
 /*BG - END*/
 
