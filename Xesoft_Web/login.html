@@ -26,45 +26,48 @@
                 <div class="grid-cl-4-mobile grid-cl-7-tablet grid-cl-7-desktop"></div>
                 <div class="grid-cl-4-mobile grid-cl-5-tablet grid-cl-5-desktop">
                     <div class="content-wrapper">
-                        <!--div class="tabs__wrapper">
-                            <ul class="tabs__list">
-                                <il class="tabs__list-element">
-                                    <a href="#accedi">
-                                        <span>Accedi</span>
-                                    </a>
-                                </il>
-                                <il class="tabs__list-element">
-                                    <a href="#registrati">
-                                        <span>Registrati</span>
-                                    </a>
-                                </il>
-                            </ul>
-                            <div class="tab">
-                                <div id="accedi" class="tab-content">
-                                    stuffaaaa111
-                                </div>
-                                <div id="registrati" class="tab-content">
-                                    stuffaaaa222222
-                                </div>
-                            </div>                          
-                         </div-->
                          <div class="tabs__wrapper">
                             <div class="tabs__element">
                                 <input type="radio" id="login" name="acesso-portale" checked>
-                                <label for="login">Accedi</label>
+                                <label class="tabs__element__label" for="login">Accedi</label>
                                 <div class="tabs__content">
-                                    <input type="email" id="email" pattern=".+@globex.com" size="30" required>
-                                    <input type="password" id="pass" name="password" minlength="8" required>
+                                    <div class="form__group">
+                                        <div class="form__group__wrapper">
+                                            <input type="email" id="email" required>
+                                            <label for="email" class="form-group__label">Email</label>
+                                        </div>
+                                        <div class="form__group__wrapper">
+                                            <input type="password" id="pass" name="password" minlength="8" required>
+                                            <label for="pass" class="form-group__label">Password</label>
+                                        </div>
+                                    </div>
+                                    <div class="button__wrapper">
+                                        <button class="button__content">Accedi</button>
+                                    </div>
                                 </div> 
                             </div>
                          
                             <div class="tabs__element">
                                 <input type="radio" id="registrazione" name="acesso-portale">
-                                <label for="registrazione">Registrati</label>
+                                <label class="tabs__element__label" for="registrazione">Registrati</label>
                                 <div class="tabs__content">
-                                    <input type="text" size="30" required>
-                                    <input type="email" pattern=".+@globex.com" size="30" required>
-                                    <input type="password" name="password" minlength="8" required>
+                                    <div class="form__group">
+                                        <div class="form__group__wrapper">
+                                            <input type="text" id="nickname" required>
+                                            <label for="email" class="form-group__label">Nickname</label>
+                                        </div>
+                                        <div class="form__group__wrapper">
+                                            <input type="email" id="email" required>
+                                            <label for="email" class="form-group__label">Email</label>
+                                        </div>
+                                        <div class="form__group__wrapper">
+                                            <input type="password" id="pass" name="password" minlength="8" required>
+                                            <label for="pass" class="form-group__label">Password</label>
+                                        </div>
+                                    </div>
+                                    <div class="button__wrapper">
+                                        <button class="button__content">Registrati</button>
+                                    </div>
                                 </div> 
                             </div>
                          </div>
