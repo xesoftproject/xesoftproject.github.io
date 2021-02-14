@@ -2,12 +2,6 @@
 .background-wrapper{
     background-image: url("../img/sfondo-login-mobile.png");
 }
-@media (min-width: 1024px) {
-    .background-wrapper{
-        background-image: url("../img/sfondo-login-desktop.jpg");
-    }
-}
-
 .content-wrapper{
     margin-top: 95px;
 }
@@ -28,7 +22,6 @@
     text-align: center;
     color: #533987;
 }
-
 .tabs__wrapper .tabs__element .tabs__element__label{
     text-align: center;
     padding: 12px 0;
@@ -52,13 +45,49 @@
     z-index: 1;
     visibility: visible;
 }
-
 .tabs__content{
     position: absolute;
     left: 0;
+    right: 0;
     background-color: rgb(193, 226, 229, 0.8);
     padding: 20px;
     border-bottom-right-radius: 4px;
     border-bottom-left-radius: 4px;
     visibility: hidden;
+}
+
+@media (min-width: 1024px) {
+    .background-wrapper{
+        background-image: url("../img/sfondo-login-desktop.jpg");
+    }
+    .content-wrapper{
+        margin-top: 180px;
+    }
+    .form__group__wrapper{
+        width: 100%;
+        max-width: 553px;
+    }
+    .tabs__wrapper .tabs__element{
+        font-size: 36px;
+    }
+    .tabs__wrapper .tabs__element .tabs__element__label{
+        padding: 20px 0;
+    }
+    .tabs__content{
+        padding: 45px 75px;
+    }
+    .form__group__wrapper{
+        margin: 28px auto;
+    }
+    .form-group__label{
+        font-size: 20px;
+        top: -60px;
+    }
+    .form__group__wrapper input{
+        vertical-align: middle;
+        font-size: 22px;
+    }
+    .button__wrapper{
+        margin: 65px 0;
+    }
 }

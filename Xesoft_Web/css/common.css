@@ -218,6 +218,7 @@ p{
     border: 0;
     outline: 0;
     box-shadow: none;
+	color: #533987 !important;
 }
 
 .form-group__label{
