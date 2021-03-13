@@ -1,0 +1,47 @@
+/*BG - BEGIN*/
+.background-wrapper{
+    background-image: url("../img/sfondo-login-mobile.png");
+}
+.content-wrapper.content-wrapper__top{
+    margin-top: 80px;
+}
+.content-wrapper{
+    background-color: rgb(193, 226, 229, 0.8);
+    padding: 10px 15px;
+    margin-top: 15px;
+}
+.title{
+    margin: 0;
+    text-align: center;
+    font-size: 24px;
+    font-weight: normal;
+    color: #533987;
+    padding-bottom: 15px;
+}
+.statistiche__container-link{
+    align-self: self-end;
+    padding-bottom: 15px;
+    text-align: right;
+}
+
+.statistiche__container-link a{
+    color: #645ca1;
+}
+.statistiche{
+    padding-bottom: 15px;
+    color: #645ca1;
+    font-size: 18px;
+}
+@media (min-width: 1024px) {
+    .background-wrapper{
+        background-image: url("../img/sfondo-login-desktop.jpg");
+    }
+    .content-wrapper.content-wrapper__top{
+        margin-top: 180px;
+    }
+    .content-wrapper{
+        background-color: rgb(193, 226, 229, 0.8);
+        padding: 10px 15px;
+        margin-top: 30px;
+    }
+}
