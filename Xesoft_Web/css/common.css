@@ -240,15 +240,16 @@ p{
 }
 
 .form__group__wrapper select{
-	width: 100%;
+	width: calc(100% - 30px);
     height: 100%;
     background: transparent;
-    padding: 0px 15px 0 30px;
+    padding: 0px;
     border: none;
-    margin-left: -15px;
+    margin-left: 15px;
 	color: #9493f2;
 	position: relative;
     z-index: 99;
+	outline: none;
 }
 
 .form__group__wrapper select::after{
@@ -268,7 +269,7 @@ p{
 	top: -58px;
 }
 
-/*INPUT - END*/
+/*BTN - END*/
 .button__wrapper{
 	margin: 20px 0;
 	text-align: center;
@@ -283,4 +284,30 @@ p{
     background-color: #8781bd;
     font-size: 18px;
     color: #c1e2e5;
+	cursor: pointer;
 }
+/*BTN - END*/
+
+
+/*HIDDEN - BEGIN*/
+@media (max-width: 767px) {
+	.hidden-xs {
+		display: none !important;
+   }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+	.hidden-sm {
+		display: none !important;
+   }
+}
+@media (min-width: 1024px) and (max-width: 1199px) {
+	.hidden-md {
+		display: none !important;
+   }
+}
+@media (min-width: 1200px) {
+	.hidden-lg {
+		display: none !important;
+   }
+}
+/*HIDDEN - END*/

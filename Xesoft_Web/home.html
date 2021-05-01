@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="css/home.css" type="text/css">
             
     </head>
-    <body>
+    <body id="home-container" class="background-wrapper">
         <header class="header-wrapper">
             <div class="grid-container">
                 <div class="grid-cl-4-mobile grid-cl-12-tablet grid-cl-12-desktop">
@@ -21,20 +21,26 @@
                 </div>
             </div>
         </header>
-        <article class="background-wrapper">
+        <article>
             <div class="grid-container">
-                <div class="grid-cl-4-mobile grid-cl-12-tablet grid-cl-12-desktop">
+                <div class="grid-cl-4-mobile grid-cl-3-tablet grid-cl-3-desktop"></div>
+                <div class="grid-cl-4-mobile grid-cl-6-tablet grid-cl-6-desktop grid-cl-container">
                     <div class="content-wrapper content-wrapper__top">
                         <h2 class="title">UserName</h2>
                         <div class="grid-container grid-container__nested">
-                            <div class="grid-cl-2-mobile grid-cl-6-tablet grid-cl-6-desktop">
+                            <div class="hidden-xs hidden-sm grid-cl-2-desktop">
+                                <div>
+                                    <img src="" alt="user-icon">
+                                </div>
+                            </div>
+                            <div class="grid-cl-2-mobile grid-cl-6-tablet grid-cl-7-desktop">
                                 <div class="statistiche">
                                     <p>Vittorie: 0</p>
                                     <p>Sconfitte: 0</p>
                                     <p>Pareggi: 0</p>
                                 </div>
                             </div>
-                            <div class="grid-cl-2-mobile grid-cl-6-tablet grid-cl-6-desktop statistiche__container-link">
+                            <div class="grid-cl-2-mobile grid-cl-6-tablet grid-cl-3-desktop statistiche__container-link">
                                 <a href="#">Storico partite</a>
                             </div>
                         </div>
@@ -44,43 +50,37 @@
                         <h2 class="title">Start New Game</h2>
                         <div class="grid-container grid-container__nested">
                             <div class="grid-cl-4-mobile grid-cl-12-tablet grid-cl-12-desktop">
-                                <div class="form__group">
-                                    <div class="form__group__wrapper">
-                                        <select class="" name="cars" id="cars">
-                                            <option value="volvo">Volvo</option>
-                                            <option value="saab">Saab</option>
-                                            <option value="mercedes">Mercedes</option>
-                                            <option value="audi">Audi</option>
-                                          </select>
-                                        <label for="email" class="form-group__label">Nickname</label>
+                                <form action="#" id="newgame">
+                                    <div class="form__group">
+                                        <div class="form__group__wrapper">
+                                            <select name="colori" id="colori">
+                                                <option value="white" selected>Bianco</option>
+                                                <option value="black">Nero</option>
+                                            </select>
+                                            <label for="colors" class="form-group__label">Colore</label>
+                                        </div>
+                                        <div class="form__group__wrapper">
+                                            <select name="opponent" id="opponent">
+                                                <option value="cpu" selected>CPU</option>
+                                                <option value="friend">Amico</option>
+                                            </select>
+                                            <label for="opponent" class="form-group__label">Sfidante</label>
+                                        </div>
+                                        <div class="form__group__wrapper">
+                                            <select id="friend" name="friend" disabled>
+                                            </select>
+                                            <label for="email" class="form-group__label">Amici</label>
+                                        </div>
+                                        <div class="button__wrapper">
+                                            <button type="submit" class="button__content">Inizia partita</button>
+                                        </div>
                                     </div>
-                                    <div class="form__group__wrapper">
-                                        <select class="" name="cars" id="cars">
-                                            <option value="volvo">Volvo</option>
-                                            <option value="saab">Saab</option>
-                                            <option value="mercedes">Mercedes</option>
-                                            <option value="audi">Audi</option>
-                                          </select>
-                                        <label for="email" class="form-group__label">Nickname</label>
-                                    </div>
-                                    <div class="form__group__wrapper">
-                                        <select class="" name="cars" id="cars">
-                                            <option value="volvo">Volvo</option>
-                                            <option value="saab">Saab</option>
-                                            <option value="mercedes">Mercedes</option>
-                                            <option value="audi">Audi</option>
-                                          </select>
-                                        <label for="email" class="form-group__label">Nickname</label>
-                                    </div>
-                                <div class="button__wrapper">
-                                    <button class="button__content">Registrati</button>
-                                </div>
-                                    
+                                </form>
                             </div>
-
                         </div>
                     </div>
                 </div>
+                <div class="grid-cl-4-mobile grid-cl-3-tablet grid-cl-3-desktop"></div>
             </div>
         </article>
         <footer class="footer-wrapper">
