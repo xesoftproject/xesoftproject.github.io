@@ -10,6 +10,9 @@ body{
 	margin: 0;
 	font-family: Myriad Pro;
 }
+html, body{
+	min-height: 100%;
+}
 p{
 	margin: 0;
 }
@@ -145,6 +148,10 @@ p{
 		margin: 0 68px;
 	}
 }
+
+.grid-cl-container{
+	padding: 20px 0px 130px 0;
+}
 /*GRID - END*/
 
 /*HEADER - BEGIN*/
@@ -155,6 +162,7 @@ p{
     top: 0;
     left: 0;
     padding: 10px 0;
+	z-index: 99;
 }
 
 .header-wrapper img{
@@ -173,8 +181,6 @@ p{
 .footer-wrapper {
 	background: rgb(0,0,0,0.6);
     width: 100%;
-    height: 70px;
-    margin-top: -70px;
 }
 
 .footer-wrapper p{
@@ -189,8 +195,8 @@ p{
 /*BG - BEGIN*/
 .background-wrapper{
 	background-repeat: no-repeat;
-	background-size: cover;
-	height: 100vh;
+    background-size: cover;
+    background-position: center;
 }
 /*BG - END*/
 
@@ -265,6 +271,7 @@ p{
 /*INPUT - END*/
 .button__wrapper{
 	margin: 20px 0;
+	text-align: center;
 }
 .button__content{
 	max-width: 215px;
